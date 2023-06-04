@@ -23,7 +23,7 @@ def requests_distributed(_list):
     for my_dict in list_:
         for key, value in my_dict.items():
             percentage = round((len(value) / len(queries)) * 100, 2)
-            list_1.append(f'Поисковых запросов из {key} слова: {percentage}% ')
+            list_1.append(f'Поисковых запросов из {key} слов: {percentage}% ')
         return list_1
 
 

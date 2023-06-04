@@ -15,7 +15,7 @@ geo_logs = [
 ]
 
 
-def seach(_list):
+def search(_list):
     list_ = []
     for item in _list:
         for val in item.values():
@@ -25,5 +25,5 @@ def seach(_list):
 
 
 
-res = seach(geo_logs)
+res = search(geo_logs)
 print(res)

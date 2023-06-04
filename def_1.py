@@ -24,6 +24,5 @@ def search(_list):
     return list_
 
 
-
-res = search(geo_logs)
-print(res)
+if __name__ == '__main__':
+    search(geo_logs)

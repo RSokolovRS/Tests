@@ -1,6 +1,6 @@
-from def_1 import search
-from tests.test_search import main
 from unittest import main
+from def_1 import search
 
 if __name__ == '__main__':
+    search()
     main()

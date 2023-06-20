@@ -15,5 +15,5 @@ def out(my_dict):
     return res
 
 
-result = out(ids)
-print(result)
+if __name__ == '__main__':
+    out(ids)

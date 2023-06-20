@@ -27,5 +27,5 @@ def requests_distributed(_list):
         return list_1
 
 
-res = requests_distributed(queries)
-print(res)
+if __name__ == '__main__':
+    requests_distributed(queries)

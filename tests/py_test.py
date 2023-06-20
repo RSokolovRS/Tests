@@ -1,7 +1,9 @@
-# Дан список с визитами по городам и странам. Напишите код, который возвращает отфильтрованный
-#  список geo_logs, содержащий только визиты из России."
+import pytest
+from def_1 import search
 
-# geo_logs = [
+class TestClass:
+#     @pytest.mark.parametrize('geo_logs', [
+#         ([
 #     {'visit1': ['Москва', 'Россия']},
 #     {'visit2': ['Дели', 'Индия']},
 #     {'visit3': ['Владимир', 'Россия']},
@@ -12,17 +14,14 @@
 #     {'visit8': ['Тула', 'Россия']},
 #     {'visit9': ['Курск', 'Россия']},
 #     {'visit10': ['Архангельск', 'Россия']}
-# ]
+# ])
+#     ]
 
+#     )
+    def test_one(self, geo_logs):
+        assert search(geo_logs) is list
 
-def search(_list):
-    list_ = []
-    for item in _list:
-        for val in item.values():
-            if 'Россия' in val:
-                list_.append(item)
-    return list_
 
 
 if __name__ == '__main__':
-    search(geo_logs)
+    TestClass()
